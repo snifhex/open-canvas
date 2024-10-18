@@ -1,11 +1,11 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { OpenCanvasGraphAnnotation, OpenCanvasGraphReturnType } from "../state";
 import { NEW_ARTIFACT_PROMPT } from "../prompts";
-import { Artifact, Reflections } from "../../../types";
 import { z } from "zod";
 import { v4 as uuidv4 } from "uuid";
-import { ensureStoreInConfig, formatReflections } from "@/agent/utils";
 import { LangGraphRunnableConfig } from "@langchain/langgraph";
+import { ensureStoreInConfig, formatReflections } from "../../utils";
+import { Artifact, Reflections } from "@/types";
 
 /**
  * Generate a new artifact based on the user's query.

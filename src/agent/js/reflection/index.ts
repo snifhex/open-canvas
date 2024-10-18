@@ -5,10 +5,10 @@ import {
   START,
 } from "@langchain/langgraph";
 import { ReflectionGraphAnnotation, ReflectionGraphReturnType } from "./state";
-import { Reflections } from "../../types";
 import { REFLECT_SYSTEM_PROMPT, REFLECT_USER_PROMPT } from "./prompts";
 import { z } from "zod";
 import { ensureStoreInConfig, formatReflections } from "../utils";
+import { Reflections } from "@/types";
 
 export const reflect = async (
   state: typeof ReflectionGraphAnnotation.State,

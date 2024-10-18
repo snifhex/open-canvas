@@ -1,5 +1,5 @@
+import { Reflections } from "@/types";
 import { BaseStore, LangGraphRunnableConfig } from "@langchain/langgraph";
-import { Reflections } from "../types";
 
 export const formatReflections = (
   reflections: Reflections,

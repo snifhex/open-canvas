@@ -1,9 +1,9 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { OpenCanvasGraphAnnotation, OpenCanvasGraphReturnType } from "../state";
 import { UPDATE_HIGHLIGHTED_ARTIFACT_PROMPT } from "../prompts";
-import { ensureStoreInConfig, formatReflections } from "@/agent/utils";
-import { Reflections } from "../../../types";
 import { LangGraphRunnableConfig } from "@langchain/langgraph";
+import { ensureStoreInConfig, formatReflections } from "../../utils";
+import { Reflections } from "@/types";
 
 /**
  * Update an existing artifact based on the user's query.

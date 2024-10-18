@@ -1,9 +1,9 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { OpenCanvasGraphAnnotation, OpenCanvasGraphReturnType } from "../state";
 import { formatArtifacts } from "../utils";
-import { ensureStoreInConfig, formatReflections } from "@/agent/utils";
 import { LangGraphRunnableConfig } from "@langchain/langgraph";
-import { Reflections } from "../../../types";
+import { ensureStoreInConfig, formatReflections } from "../../utils";
+import { Reflections } from "@/types";
 
 /**
  * Generate responses to questions. Does not generate artifacts.

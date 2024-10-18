@@ -5,7 +5,7 @@ import {
   ProgrammingLanguageOptions,
   ReadingLevelOptions,
   Highlight,
-} from "../../types";
+} from "@/types";
 import { Annotation, MessagesAnnotation } from "@langchain/langgraph";
 
 /**

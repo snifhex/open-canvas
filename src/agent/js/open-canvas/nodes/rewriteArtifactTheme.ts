@@ -7,9 +7,9 @@ import {
   CHANGE_ARTIFACT_READING_LEVEL_PROMPT,
   CHANGE_ARTIFACT_TO_PIRATE_PROMPT,
 } from "../prompts";
-import { ensureStoreInConfig, formatReflections } from "@/agent/utils";
-import { Reflections } from "../../../types";
 import { LangGraphRunnableConfig } from "@langchain/langgraph";
+import { ensureStoreInConfig, formatReflections } from "../../utils";
+import { Reflections } from "@/types";
 
 export const rewriteArtifactTheme = async (
   state: typeof OpenCanvasGraphAnnotation.State,
